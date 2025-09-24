@@ -6,7 +6,7 @@
 
 :root {
 
-    --text-color:  RGB(211,219,221);
+    --text--color:  RGB(211,219,221);
     --main--color: linear-gradient(
     270deg,
     rgb(73, 230, 115) 50%,
@@ -51,7 +51,7 @@ header{
 
 
 .Logo a {
-    color: var(--text-color);
+    color: var(--text--color);
     text-decoration: none;
     font-size: 1.5em;
 
@@ -69,7 +69,7 @@ header{
 }
 .mainInfo a{
     position: relative;
-    color: var(--text-color);
+    color: var(--text--color);
     text-decoration: none;
     padding: 50px;
     font-size: 1.5em;
@@ -105,22 +105,22 @@ section{
     flex-direction: row;
 
     top: 200px;
-    margin: 0 25%;
+    margin: 0 10%;
 
     background-color: black;
-    border: solid  2px  var(--text-color);
+    border: solid  2px  var(--text--color);
     border-radius: 20px;
     padding: 10px;
 
-    color: var(--text-color);
+    color: var(--text--color);
 }
 
 
 
 .picAbout {
-    margin: 10px ;
-    flex-basis: 30%;
-    border-radius: 50px;
+    margin: 10px;
+    flex-basis: 20%;
+    
 }
 
 .aboutMe, .Introduction{
@@ -144,16 +144,16 @@ section{
 .Introduction  h1 span , h2 span{
 
     background: var(--main--color);       /* your gradient */
-    -webkit-background-clip: text;       /* clip background to text (Chrome/Safari) */
+    -webkit-background-clip: text;       /* clip background to text */
     background-clip: text;               /* standard property */
     color: transparent;                  /* hide normal text color */
 }
 
 .aboutMe p span , h1 span , h2 span{
-  background: var(--main--color);       /* your gradient */
-  -webkit-background-clip: text;       /* clip background to text (Chrome/Safari) */
-  background-clip: text;               /* standard property */
-  color: transparent;                  /* hide normal text color */
+  background: var(--main--color);      
+  -webkit-background-clip: text;       
+  background-clip: text;               
+  color: transparent;                  
 }
 
 
@@ -173,22 +173,89 @@ section{
     position: relative;
     flex-direction: row;
 
-    top: 400px;
+    top: 200px;
     margin: 0 10%;
 
     background-color: black;
-    border: solid  2px  var(--text-color);
+    border: solid  2px  var(--text--color);
     border-radius: 20px;
     padding: 10px;
 
-    color: var(--text-color);
+    color: var(--text--color);
 }
 
 .aboutSection .mainInfo{
     flex-basis: 50%;
     text-align: center;
-    background-color: antiquewhite;
     height: 100%;
     padding-top: 10px;
    
+}
+
+
+.projectsSection{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+
+    top: 200px;
+    margin: 0 10%;
+
+    background-color: black;
+    border: solid  2px  var(--text--color);
+    border-radius: 20px;
+    padding: 10px;
+
+    color: var(--text-color);
+}
+.skillsTitle{
+    display: flex;
+    justify-content: center;
+    
+
+    margin: 30px;
+}
+
+.skillsTitle h1{
+    font-size: 2.5em;
+    border-bottom: 1px solid white;
+    width: 100%;  
+    color: var(--text--color);
+
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+
+.skills svg:hover {
+    transform: scale(1.5);
+    transition: transform 0.3s ease; /* optional: smooth animation */
+  }
+
+
+  .projectsTitle{
+    display: flex;
+    justify-content: center;
+    
+
+    margin: 30px;
+}
+
+.projectsTitle h1{
+    font-size: 2.5em;
+    border-bottom: 1px solid white;
+    width: 100%;  
+    color: var(--text--color);
+
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
 }
