@@ -212,7 +212,8 @@
   }
   
   .skillsTitle h1,
-  .projectsTitle h1 {
+  .projectsTitle h1, 
+  .contactContainer h1 {
     font-size: 2.5em;
     border-bottom: 1px solid white;
     width: 100%;
@@ -252,4 +253,85 @@
     border-bottom: 1px solid white;
 }
 
+/* Section fills the viewport and centers its contents */
+#contactSection {
   
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    top: 150vh;
+
+    height: 50vh;
+
+    
+    margin: 0 10%;
+    background-color: rgb(0, 0, 0);
+    border: solid 2px var(--text--color);
+    border-radius: 20px;
+    padding: 10px;
+    color: var(--text-color);
+
+  }
+
+/* Remove the manual top offset */
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+    
+
+  margin: 0 50px;
+  border: 2px solid var(--text-color);
+  border-radius: 20px;
+  padding: 20px;
+  color: var(--text-color);
+}
+
+.contactContainer h1 {
+    font-size: 2.5em;
+    margin: 10px;
+    border-bottom: 1px solid white;
+    color: var(--text--color);
+}
+  
+.contactContainer h1,label {
+  color: var(--text--color);
+}
+
+
+.contactContainer form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 50px;
+  font-size: 1.5em;
+}
+
+.contactContainer input {
+  border-radius: 5px;
+  height: 30px;
+  padding-left: 10px;
+}
+
+.contactContainer textarea{
+  padding: 10px;
+  border-radius: 5px;
+}
+.contactContainer button{
+  border-radius: 5px;
+  height: 40px;
+  width: 20%;
+  font-size: 1.1em;
+  margin: 50px 0;
+
+
+}
+
+.contactContainer button:hover{
+    background: var(--main--color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+}
